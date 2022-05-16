@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>die verflixte 7</title>
+    <script src="../js/main.js"></script>
 </head>
 <body>
 <h1>Hast auch Du langeweile? Dann spiele jetzt "die verflixte 7"</h1>
@@ -13,15 +14,26 @@
     Versuche wie Du hattest. Am Ende wird dann berechnet, wer die höhere Punktzahl hatte.</h3>
 
 <p id="Würfel1">Würfel 1:</p>
+
 <p id="Würfel2">Würfel 2:</p>
+
 <p id="Summe1">Summe Spieler 1:</p>
+
 <p id="Anzahl1">Anzahl Würfe Spieler 1:</p>
-<p id="Summe2">Summe Spiele 2:</p>
+
+<p id="Summe2">Summe Spieler 2:</p>
+
 <p id="Anzahl2">Anzahl Würfe Spieler 2:</p>
-<button onclick="wuerfeln">Würfeln!</button>
-<button onclick="stoppen">Runde beenden</button>
+
+<button onclick="wuerfeln1()" id="btnPlaceholder1">Würfeln von Spieler 1!</button><br><br>
+
+<button onclick="wuerfeln2()" id="btnPlaceholder2">Würfeln von Spieler 2!</button><br><br>
+
+<button onclick="ende()" id="btnPlaceholder3">Runde von Spieler 1 beenden</button>
 <p id="auswerten">Auswertung, wer der beste Spieler ist:</p>
+
 <button onclick="neu">Neues Spiel beginnen</button>
+
 
 
 </body>
