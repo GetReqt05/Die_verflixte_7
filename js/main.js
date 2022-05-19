@@ -56,7 +56,7 @@ function wuerfeln2() {
     }
 }
 function ende() {
-    document.getElementById("btnPlaceholder3").disabled = true
+    document.getElementById("btnPlaceholder1").disabled = true
 
 }
 function auswerten() {
@@ -68,4 +68,8 @@ function auswerten() {
         document.getElementById("auswerten").innerHTML = "Spieler 2 hat gewonnen"
     }
 
+}
+
+function neu() {
+    location.reload()
 }
