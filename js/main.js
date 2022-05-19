@@ -36,15 +36,15 @@ function wuerfeln2() {
 
     if (7 > wurf || wurf > 7) {
         punkte2 = punkte2 + wurf
-        document.getElementById("Würfel1").innerHTML = "Würfel 1:  " + wurf1
-        document.getElementById("Würfel2").innerHTML = "Würfel 2:  " + wurf2
+        document.getElementById("Würfel3").innerHTML = "Würfel 1 (Spieler 2):  " + wurf1
+        document.getElementById("Würfel4").innerHTML = "Würfel 2 (Spieler 2):  " + wurf2
         document.getElementById("Summe2").innerHTML = "Summe Spieler 2:  " + punkte2
         document.getElementById("Anzahl2").innerHTML = "Anzahl Würfe Spieler 2:  " + AnzahlWuerfe2
         document.getElementById("btnPlaceholder2").disabled = false
     } else {
         punkte2 = punkte2 + wurf - 14
-        document.getElementById("Würfel1").innerHTML = "Würfel 1:" + wurf1
-        document.getElementById("Würfel2").innerHTML = "Würfel 2:" + wurf2
+        document.getElementById("Würfel3").innerHTML = "Würfel 1 (Spieler 2):" + wurf1
+        document.getElementById("Würfel4").innerHTML = "Würfel 2 (Spieler 2):" + wurf2
         document.getElementById("Summe2").innerHTML = "Summe Spieler 2:" + punkte2
         document.getElementById("Anzahl2").innerHTML = "Anzahl Würfe Spiele 2:" + AnzahlWuerfe2
         document.getElementById("btnPlaceholder2").disabled = true

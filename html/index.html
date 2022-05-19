@@ -6,33 +6,41 @@
     <script src="../js/main.js"></script>
 </head>
 <body>
-<h1>Hast auch Du langeweile? Dann spiele jetzt "die verflixte 7"</h1>
-<h3>In unserem Spiel gehtes darum, mehr Punkte als dein Gegner zu sammeln. Wie kannst Du Punkte sammeln?<br>
-    Ganz einfach! Du drückst auf Würfeln und 2 zufällige Zahlen zwischen 1 und 6 entstehen. <br>
-    Diese werden dann zusammengerechnt und bilden die Punkte deiner ersten Runde. Du kannst aufhören, indem<br>
-    Du auf Spiel beenden drückst oder eine 7 würfelst. Dann ist dein Gegner dran und hat maximal so viele<br>
-    Versuche wie Du hattest. Am Ende wird dann berechnet, wer die höhere Punktzahl hatte.</h3>
+<div class="wrapper">
+    <div class="one">
+        <h1>Hast auch Du langeweile? Dann spiele jetzt "die verflixte 7"</h1>
+        <h3>In unserem Spiel gehtes darum, mehr Punkte als dein Gegner zu sammeln. Wie kannst Du Punkte sammeln?<br>
+            Ganz einfach! Du drückst auf Würfeln und 2 zufällige Zahlen zwischen 1 und 6 entstehen. <br>
+            Diese werden dann zusammengerechnt und bilden die Punkte deiner ersten Runde. Du kannst aufhören, indem<br>
+            Du auf Spiel beenden drückst oder eine 7 würfelst. Dann ist dein Gegner dran und hat maximal so viele<br>
+            Versuche wie Du hattest. Am Ende wird dann berechnet, wer die höhere Punktzahl hatte.</h3>
+    </div><div class="two">
+        <p id="Würfel1">Würfel 1:</p>
 
-<p id="Würfel1">Würfel 1:</p>
+        <p id="Würfel2">Würfel 2:</p>
 
-<img src=>
+        <p id="Summe1">Summe Spieler 1:</p>
 
-<p id="Würfel2">Würfel 2:</p>
+        <p id="Anzahl1">Anzahl Würfe Spieler 1:</p>
+    </div><div class="three">
+        <p id="Würfel3">Würfel 1 (Spieler 2):</p>
 
-<p id="Summe1">Summe Spieler 1:</p>
+        <p id="Würfel4">Würfel 2 (Spieler 2):</p>
 
-<p id="Anzahl1">Anzahl Würfe Spieler 1:</p>
+        <p id="Summe2">Summe Spieler 2:</p>
 
-<p id="Summe2">Summe Spieler 2:</p>
+        <p id="Anzahl2">Anzahl Würfe Spieler 2:</p>
+    </div><div class="four">
+        <button onclick="wuerfeln1()" id="btnPlaceholder1">Würfeln von Spieler 1!</button><br><br>
+        <button onclick="ende()" id="btnPlaceholder3">Runde von Spieler 1 beenden</button><br><br>
+    </div><div class="five">
+        <button onclick="wuerfeln2()" id="btnPlaceholder2">Würfeln von Spieler 2!</button><br><br>
+    </div>
 
-<p id="Anzahl2">Anzahl Würfe Spieler 2:</p>
 
-<button onclick="wuerfeln1()" id="btnPlaceholder1">Würfeln von Spieler 1!</button><br><br>
+</div>
 
-<button onclick="wuerfeln2()" id="btnPlaceholder2">Würfeln von Spieler 2!</button><br><br>
-
-<button onclick="ende()" id="btnPlaceholder3">Runde von Spieler 1 beenden</button>
-<p id="auswerten">Auswertung, wer der beste Spieler ist:</p>
+<p id="auswerten">Wer ist der bessere Würfler??</p>
 
 <button onclick="neu()" id="btnPlaceholder4">Neues Spiel beginnen</button>
 
