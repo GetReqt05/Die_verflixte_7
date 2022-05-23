@@ -75,5 +75,7 @@ function neu() {
 }
 
 function computer() {
+    while (i < )
+
     
 }
