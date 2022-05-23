@@ -73,3 +73,7 @@ function auswerten() {
 function neu() {
     location.reload()
 }
+
+function computer() {
+    
+}
