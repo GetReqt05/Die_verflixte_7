@@ -77,6 +77,7 @@ function auswerten() {
 
 function neu() {
     location.reload()
+    document.getElementById("btnPlaceholder2").disabled = true
 }
 
 function computer() {
