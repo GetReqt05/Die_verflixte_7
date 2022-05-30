@@ -19,6 +19,7 @@ function wuerfeln1() {
         document.getElementById("Summe1").innerHTML = "Summe Spieler 1:  " + punkte1
         document.getElementById("Anzahl1").innerHTML = "Anzahl Würfe Spieler 1:  " + AnzahlWuerfe1
         document.getElementById("btnPlaceholder1").disabled = false
+        document.getElementById("btnPlaceholder2").disabled = true
     } else {
         punkte1 = punkte1 + wurf - 14
         document.getElementById("Würfel1").innerHTML = "Würfel 1:" + wurf1
@@ -26,6 +27,7 @@ function wuerfeln1() {
         document.getElementById("Summe1").innerHTML = "Summe Spieler 1:" + punkte1
         document.getElementById("Anzahl1").innerHTML = "Anzahl Würfe Spiele 1:" + AnzahlWuerfe1
         document.getElementById("btnPlaceholder1").disabled = true
+        document.getElementById("btnPlaceholder2"). disabled = false
     }
 }
 
@@ -59,6 +61,7 @@ function wuerfeln2() {
 function ende() {
     document.getElementById("btnPlaceholder1").disabled = true
     document.getElementById("btnPlaceholder6").disabled = true
+    document.getElementById("btnPlaceholder2").disabled = false
 
 }
 function auswerten() {
@@ -102,10 +105,12 @@ function computer() {
             document.getElementById("Anzahl1").innerHTML = "Anzahl Würfe Spieler 1:  " + AnzahlWuerfe3
             document.getElementById("btnPlaceholder6").disabled = true
             weiterspielen = false
+            document.getElementById("btnPlaceholder2").disabled = false
         }
         if (durchschnitt >= 8) {
             weiterspielen = false
             document.getElementById("btnPlaceholder6").disabled = true
+            document.getElementById("btnPlaceholder2").disabled = false
         }
     } while (weiterspielen)
 }
